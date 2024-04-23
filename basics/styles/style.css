@@ -6,3 +6,11 @@ body{
 h1{
     background-color: cadetblue;
 }
+#hello-world{
+    color: rgb(3, 10, 101);
+    font-size: 20px;
+}
+
+.important-class{
+    background-color: aqua;
+}
