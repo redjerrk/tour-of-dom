@@ -13,4 +13,18 @@ for(const section of sections){
 
 const unOrderedList = document.getElementById('unordered-list');
 unOrderedList.style.backgroundColor = 'lightyellow';
-unOrderedList.style.border = 'yellow';
+unOrderedList.style.border = 'yellow'
+
+
+const li = document.createElement('li');
+li.innerText = 'this is a new list';
+
+unOrderedList.append(li);
+
+const liTwo = document.createElement('li');
+liTwo.innerText = 'this is a another new list';
+
+unOrderedList.appendChild(liTwo);
+
+
+
