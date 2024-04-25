@@ -38,9 +38,19 @@ for (const className of getClass) {
     console.log(className.innerText);
 }
 
+
 const headingOne = document.getElementById('first-heading');
 headingOne.innerText = 'This is the Heading One';
 
+
+console.log(headingOne.getAttribute('class'));
+console.log(headingOne.classList);
+headingOne.classList.remove('heading-class')
+console.log(headingOne.classList);
+headingOne.classList.add('heading-class')
+headingOne.classList.add('nice-heading')
+headingOne.classList.add('hello-heading')
+console.log(headingOne.classList);
 
 const querySelector = document.querySelectorAll('.important-class li')
 // console.log(querySelector);
