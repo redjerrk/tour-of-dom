@@ -17,7 +17,7 @@ unOrderedList.style.border = 'yellow'
 
 
 const li = document.createElement('li');
-li.innerText = 'this is a new list';
+li.innerText = 'This is a new list';
 
 unOrderedList.append(li);
 
@@ -25,6 +25,23 @@ const liTwo = document.createElement('li');
 liTwo.innerText = 'this is a another new list';
 
 unOrderedList.appendChild(liTwo);
+
+
+
+
+
+
+// 1. where to be added new element
+const newList = document.getElementById('new-list')
+
+// 2. what to be added
+const newLi = document.createElement('li');
+newLi.innerText = 'testing new List';
+
+// 3. add the new list
+newList.appendChild(newLi);
+
+
 
 
 
