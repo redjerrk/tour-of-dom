@@ -7,5 +7,5 @@ function handleOnclick(){
 // Option Two
 document.getElementById('event-listener').addEventListener('click', function () {
     const headingStatus = document.getElementById('heading-three');
-    headingStatus.innerText = "Heading changed By clicking on the Event Listner Button"
+    headingStatus.innerText = "Heading changed By clicking on the Event Listener Button"
 })
