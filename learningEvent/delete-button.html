@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete button practice</title>
+</head>
+
+<body>
+
+    <h1 id="heading-one">hello this is a sample text for mofidy</h1>
+
+    <input type="text" name="" id="user-input" placeholder="please write delete">
+    <button id="delete-button" disabled >Delete</button>
+
+
+
+    <script>
+        document.getElementById("user-input").addEventListener('keyup', function(event){
+            const text = event.target.value;
+            const deleteButton = document.getElementById("delete-button");
+            if(text === 'delete' || text === 'Delete'){
+                deleteButton.removeAttribute('disabled');
+            }
+            else{
+                deleteButton.setAttribute('disabled', true);
+            }
+        })
+        document.getElementById('delete-button').addEventListener('click', function () {
+            const setDelete = document.getElementById("heading-one");
+            setDelete.style.display = "none";
+        })
+        
+
+    </script>
+
+
+</body>
+
+</html>
